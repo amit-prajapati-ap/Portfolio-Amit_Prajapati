@@ -55,7 +55,7 @@ const Contact = () => {
             <h2 className='text-2xl font-semibold'>CONTACT WITH ME 🚀</h2>
             <div className='h-1 w-16 bg-purple-600'></div>
           </div>
-          <p className='font-[500]'>Email Us On: prajapatiapamit@gmail.com</p>
+          <p className='font-[500]'>Email Us On: apamit6239@gmail.com</p>
         </div>
 
         {/* Contact Body  */}
