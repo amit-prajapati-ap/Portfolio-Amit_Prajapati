@@ -48,7 +48,7 @@ const Contact = () => {
         </p>
       </div>
 
-      <div className='mx-auto max-w-[1024px] flex justify-between gap-4 flex-col md:flex-row bg-slate-950 rounded-2xl p-8 shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] backdrop-blur-md'>
+      <div className='mx-auto max-w-[1024px] flex justify-between gap-4 flex-col md:flex-row bg-slate-950 rounded-2xl p-4 xs:p-8 shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] backdrop-blur-md'>
         {/* Contact Header  */}
         <div className='flex flex-col justify-between gap-4 text-purple-600 w-full'>
           <div className='flex flex-col gap-1'>

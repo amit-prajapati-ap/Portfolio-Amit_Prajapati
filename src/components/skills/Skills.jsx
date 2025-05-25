@@ -1,8 +1,45 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { SkillsInfo } from "../../constants";
 import Tilt from "react-parallax-tilt";
 
 const Skills = () => {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth);
+
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup event listener on component unmount
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const skillsItems = (category) => {
+    return (
+      <div className="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 w-full">
+        {category.skills.map((skill) => (
+          <div
+            key={skill.name}
+            className="flex items-center justify-center space-x-2 bg-transparent border-2 border-gray-700 rounded-3xl py-2 px-2 sm:px-2 sm:py-2 text-center"
+          >
+            {typeof skill.logo === "function" ? (
+              <skill.logo size={30} /> // renders AiFillOpenAI correctly
+            ) : (
+              <img
+                src={skill.logo}
+                alt={skill.name}
+                className="w-6 h-6 sm:w-8 sm:h-8"
+              />
+            )}
+            <span className="text-xs sm:text-sm text-gray-200">
+              {skill.name}
+            </span>
+          </div>
+        ))}
+      </div>
+    );
+  };
+
   return (
     <section
       id="skills"
@@ -30,7 +67,7 @@ const Skills = () => {
             </h3>
 
             {/* Skills Items - 3 per row on larger screen  */}
-            <Tilt
+            {width >= 1024 ? (<Tilt
               className="bottom-4 cursor-grab border-purple-700 rounded-full"
               tiltMaxAngleX={20}
               tiltMaxAngleY={20}
@@ -39,28 +76,8 @@ const Skills = () => {
               transitionSpeed={1000}
               gyroscope={true}
             >
-              <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 w-full">
-                {category.skills.map((skill) => (
-                  <div
-                    key={skill.name}
-                    className="flex items-center justify-center space-x-2 bg-transparent border-2 border-gray-700 rounded-3xl py-2 px-2 sm:px-2 sm:py-2 text-center"
-                  >
-                    {typeof skill.logo === "function" ? (
-                      <skill.logo size={30} /> // renders AiFillOpenAI correctly
-                    ) : (
-                      <img
-                        src={skill.logo}
-                        alt={skill.name}
-                        className="w-6 h-6 sm:w-8 sm:h-8"
-                      />
-                    )}
-                    <span className="text-xs sm:text-sm text-gray-200">
-                      {skill.name}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </Tilt>
+              {skillsItems(category)}
+            </Tilt>) : (skillsItems(category))}
           </div>
         ))}
       </div>

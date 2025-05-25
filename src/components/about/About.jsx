@@ -1,9 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import Tilt from "react-parallax-tilt";
 import profileImage from "../../assets/profile2.png";
 
 const About = () => {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth);
+
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup event listener on component unmount
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const imageContent = (
+    <img
+      src={profileImage}
+      alt="Amit Prajapati"
+      className="w-full h-full rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]"
+    />
+  );
+
   return (
     <section
       id="about"
@@ -53,7 +72,7 @@ const About = () => {
 
           {/* Resume Button  */}
           <a
-            href="https://drive.google.com/file/d/1KIwNNbLU5VgHOZMRZ3qmxG0e7ytsYaec/view?usp=sharing"
+            href="https://drive.google.com/file/d/1l8l9ElfT3JswhaLuIvrW5k1_fYajsGli/view?usp=drive_link"
             target="_black"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
@@ -68,13 +87,23 @@ const About = () => {
 
         {/* Right Side  */}
         <div className="md:w-1/2 flex justify-center md:pl-8 md:justify-end">
-          <Tilt className="w-48 cursor-grab h-48 sm:w-64 sm:h-64 md:w-[30rem] md:h-[30rem] bottom-4 border-purple-700 rounded-full" tiltMaxAngleX={20} tiltMaxAngleY={20} perspective={1000} scale={1.05} transitionSpeed={1000} gyroscope={true}>
-            <img
-              src={profileImage}
-              alt="Amit Prajapati"
-              className="w-full h-full rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]"
-            />
-          </Tilt>
+          {width >= 765 ? (
+            <Tilt
+              className="w-48 cursor-grab h-48 sm:w-64 sm:h-64 md:w-[30rem] md:h-[30rem] bottom-4 border-purple-700 rounded-full"
+              tiltMaxAngleX={20}
+              tiltMaxAngleY={20}
+              perspective={1000}
+              scale={1.05}
+              transitionSpeed={1000}
+              gyroscope={true}
+            >
+              {imageContent}
+            </Tilt>
+          ) : (
+            <div className="w-48 h-48 sm:w-64 sm:h-64 md:w-[30rem] md:h-[30rem] bottom-4 border-purple-700 rounded-full">
+              {imageContent}
+            </div>
+          )}
         </div>
       </div>
     </section>

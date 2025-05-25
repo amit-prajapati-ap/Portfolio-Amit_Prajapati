@@ -69,7 +69,7 @@ const Projects = () => {
       {selectedProject && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 p-4">
           <div className="bg-gray-900 rounded-xl shadow-2xl lg:w-full w-[90%] max-w-3xl overflow-hidden relative">
-            <div className="flex justify-end px-4 mt-8">
+            <div className="flex justify-end px-4 mt-2 md:mt-4 lg:mt-8">
               <button
                 onClick={handleCloseModel}
                 className="text-white text-3xl font-bold hover:text-purple-500"

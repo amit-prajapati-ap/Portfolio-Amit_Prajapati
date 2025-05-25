@@ -29,7 +29,7 @@ const Footer = () => {
       <div className='container mx-auto text-center'>
         <h2 className='text-xl font-semibold text-purple-500'>Amit Prajapati</h2>
 
-        <nav className='flex flex-wrap justify-center space-x-4 sm:space-x-6 mb-1'>
+        <nav className='flex flex-wrap justify-center space-x-2 xs:space-x-4 sm:space-x-6 mb-1'>
           {menuItems.map((item, index) => (
             <button key={index} onClick={() => handleScroll(item.id)} className='hover:text-purple-500 text-sm sm:text-base my-4 transition-all duration-200'>{item.label}</button>
           ))}
