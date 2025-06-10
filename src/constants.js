@@ -26,11 +26,8 @@ import ku from './assets/education_logo/ku.png';
 
 // Project Section Logo's
 import shopLogo from './assets/work_logo/shop.png';
-import musicLogo from './assets/work_logo/music.png';
-import oncetubeLogo from './assets/work_logo/oncetube.png';
 import eduturnsLogo from './assets/work_logo/eduturns.png';
 import notessnippetLogo from './assets/work_logo/notessnippet.png';
-import webverLogo from './assets/work_logo/miniprojects.png';
 
 import {AiFillOpenAI, AiOutlineApi} from 'react-icons/ai'
 import {FaFigma} from 'react-icons/fa'
@@ -149,16 +146,6 @@ export const SkillsInfo = [
     },
     {
       id: 2,
-      title: "OnceTube - A Media Platform",
-      description:
-        "OnceTube is a modern React-based media platform that lets users explore and stream trending YouTube videos categorized by genre, region, and popularity. With features like real-time search, filters, and a seamless video viewing experience, OnceTube delivers a dynamic and engaging interface for discovering top content across YouTube.",
-      image: oncetubeLogo,
-      tags: ["API", "HTML", "Redux", "React JS", "JavaScript", "Youtube API", "Tailwind CSS", "React-Router-DOM"],
-      github: "https://github.com/amit-prajapati-ap/OnceTube",
-      webapp: "https://oncetube.netlify.app/",
-    },
-    {
-      id: 3,
       title: "OnceMore Shop - A Ecom App",
       description:
         "OnceMore Shop is a stylish and responsive eCommerce web application built with HTML, Tailwind CSS, and JavaScript. It features a modern product listing interface, shopping cart functionality, and smooth navigation across pages like Home, Products, About, and Cart. Designed for simplicity and scalability, it offers a great foundation for online retail experiences.",
@@ -166,25 +153,5 @@ export const SkillsInfo = [
       tags: ["HTML", "JavaScript", "Tailwind CSS"],
       github: "https://github.com/amit-prajapati-ap/OnceMore-Shop",
       webapp: "https://oncemoreshop.netlify.app/",
-    },
-    {
-      id: 4,
-      title: "OnceMore Musics - Music Player",
-      description:
-        "OnceMore Musics is a visually appealing music player web app that lets users stream and control audio playback with ease. Built using HTML, CSS, and JavaScript, it features custom playlists, sleek controls, and responsive design—delivering a smooth and immersive music experience right in the browser.",
-      image: musicLogo,
-      tags: ["JavaScript", "HTML", "CSS"],
-      github: "https://github.com/amit-prajapati-ap/OnceMore-Musics",
-      webapp: "https://oncemoremusics.netlify.app/",
-    },
-    {
-      id: 5,
-      title: "Mini Projects - JS Projects Collection",
-      description:
-        "Mini Projects is a curated collection of small yet impactful web development projects built using HTML, CSS, and JavaScript. Covering a wide range of concepts—from API integrations and animations with Framer Motion to AI-based tools and logic-building challenges—this repo showcases hands-on practice with real-world use cases and problem-solving on platforms like LeetCode and Gemini AI.",
-      image: webverLogo,
-      tags: ["HTML", "CSS", "API", "JavaScript", "Gemeni AI", "Leetcode"],
-      github: "https://github.com/amit-prajapati-ap/MINI-PROJECTS",
-      webapp: "https://github.com/amit-prajapati-ap/MINI-PROJECTS/tree/main/Mini%20Projects",
     },
   ];  
