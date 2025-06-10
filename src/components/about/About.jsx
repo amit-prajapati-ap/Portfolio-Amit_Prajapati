@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import Tilt from "react-parallax-tilt";
-import profileImage from "../../assets/profile2.png";
+import profileImage from "../../assets/profile2.webp";
 
 const About = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -20,6 +20,7 @@ const About = () => {
       src={profileImage}
       alt="Amit Prajapati"
       className="w-full h-full rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]"
+      loading="lazy"
     />
   );
 
