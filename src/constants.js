@@ -25,7 +25,7 @@ import hmsss from './assets/education_logo/hmsss.webp';
 import ku from './assets/education_logo/ku.png';
 
 // Project Section Logo's
-import shopLogo from './assets/work_logo/shop.png';
+import mernAuthUI from './assets/work_logo/mern-auth-ui.png';
 import eduturnsLogo from './assets/work_logo/eduturns.png';
 import notessnippetLogo from './assets/work_logo/notessnippet.png';
 
@@ -146,12 +146,12 @@ export const SkillsInfo = [
     },
     {
       id: 2,
-      title: "OnceMore Shop - A Ecom App",
+      title: "Universal Auth System - Secure Authentication",
       description:
-        "OnceMore Shop is a stylish and responsive eCommerce web application built with HTML, Tailwind CSS, and JavaScript. It features a modern product listing interface, shopping cart functionality, and smooth navigation across pages like Home, Products, About, and Cart. Designed for simplicity and scalability, it offers a great foundation for online retail experiences.",
-      image: shopLogo,
-      tags: ["HTML", "JavaScript", "Tailwind CSS"],
-      github: "https://github.com/amit-prajapati-ap/OnceMore-Shop",
-      webapp: "https://oncemoreshop.netlify.app/",
+        "One Auth to Rule Them All — Scalable, Secure & Developer-First: The Universal Secure Auth System is a robust, plug-and-play authentication backend designed for full-stack applications seeking scalable, zero-friction user auth. It seamlessly integrates modern authentication standards with developer usability, cutting down auth setup time from hours to minutes.",
+      image: mernAuthUI,
+      tags: ["HTML", "Express", "MongoDB", "Node JS", "React JS", "JavaScript", "Tailwind CSS"],
+      github: "https://github.com/amit-prajapati-ap/MERN-Authentication",
+      webapp: "https://mern-auth-ui-weld.vercel.app",
     },
   ];  
