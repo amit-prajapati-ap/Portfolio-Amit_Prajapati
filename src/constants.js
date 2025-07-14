@@ -99,7 +99,7 @@ export const SkillsInfo = [
       img: ku,
       school: "Kurukshetra University, Haryana",
       date: "July 2023 - May 2026",
-      GPA: "8.67",
+      GPA: "9.0",
       desc: "I am doing my Bachelor's degree in Computer Application (BCA) from Kurukshetra University, Kurukshetra.",
       degree: "Bachelor in Computer Application - BCA",
     },

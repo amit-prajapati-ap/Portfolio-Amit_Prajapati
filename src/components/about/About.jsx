@@ -62,18 +62,12 @@ const About = () => {
 
           {/* About me paragraph */}
           <p className="text-base sm:text-lg md:text-lg text-gray-300 mb-10 mt-8 leading-relaxed">
-            I’m a MERN stack developer skilled in React, Node.js, Express,
-            MongoDB, and modern tools like Tailwind CSS, Firebase, Stripe,
-            Clerk, and JWT. I’ve built full-stack apps like Eduturns,
-            NotesSnippet, OnceMore Shop, and OnceTube—covering everything from
-            authentication to real-time collaboration. I enjoy crafting
-            scalable, secure, and responsive web experiences that solve real
-            problems and enhance user engagement.
+            I'm a Full Stack Developer skilled in the MERN stack, JavaScript, TypeScript, Next.js, NextAuth, and OAuth, with expertise in tools like Tailwind CSS, ShadCN, Aceternity UI, Clerk, Stripe, Firebase, and JWT. I've built and deployed full-stack apps like EduTurns, GaddiBazaar, VibeoSonic, NotesSnippet, OnceMore Shop, and OnceTube, delivering scalable, secure, and user-centric web experiences that solve real-world problems.
           </p>
 
           {/* Resume Button  */}
           <a
-            href="https://drive.google.com/file/d/1gP8SbeK6wxdJJnvz1urIrw9dHRJ2uJzk/view?usp=sharing"
+            href="https://drive.google.com/file/d/1ltYW4EQRQoLUyu6xRXRk4BDdpm5MolUR/view?usp=sharing"
             target="_black"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
