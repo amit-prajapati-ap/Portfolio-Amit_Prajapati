@@ -25,15 +25,18 @@ import hmsss from './assets/education_logo/hmsss.webp';
 import ku from './assets/education_logo/ku.png';
 
 // Project Section Logo's
-import mernAuthUI from './assets/work_logo/mern-auth-ui.png';
+import mernAuthLogo from './assets/work_logo/mern-auth-ui.png';
 import eduturnsLogo from './assets/work_logo/eduturns.png';
 import notessnippetLogo from './assets/work_logo/notessnippet.png';
+import gaddibazaarLogo from './assets/work_logo/gaddibazaar.png';
+import TravelEaseLogo from './assets/work_logo/travelease.png';
+import VibeoSonicLogo from './assets/work_logo/vibeosonic.png';
 
-import {AiFillOpenAI, AiOutlineApi} from 'react-icons/ai'
-import {FaFigma} from 'react-icons/fa'
-import {GrMysql} from 'react-icons/gr'
-import {BiLogoJquery, BiLogoTypescript} from 'react-icons/bi'
-import {SiAppwrite, SiAxios, SiClerk, SiJsonwebtokens, SiPrettier, SiReactrouter, SiSocketdotio, SiStripe} from 'react-icons/si'
+import { AiFillOpenAI, AiOutlineApi } from 'react-icons/ai'
+import { FaFigma } from 'react-icons/fa'
+import { GrMysql } from 'react-icons/gr'
+import { BiLogoJquery, BiLogoTypescript } from 'react-icons/bi'
+import { SiAppwrite, SiAxios, SiClerk, SiJsonwebtokens, SiPrettier, SiReactrouter, SiSocketdotio, SiStripe } from 'react-icons/si'
 
 export const SkillsInfo = [
   {
@@ -92,66 +95,111 @@ export const SkillsInfo = [
     ],
   },
 ];
-  
-  export const education = [
-    {
-      id: 0,
-      img: ku,
-      school: "Kurukshetra University, Haryana",
-      date: "July 2023 - May 2026",
-      GPA: "9.0",
-      desc: "I am doing my Bachelor's degree in Computer Application (BCA) from Kurukshetra University, Kurukshetra.",
-      degree: "Bachelor in Computer Application - BCA",
-    },
-    {
-      id: 1,
-      img: hmsss,
-      school: "Haryana Model Senior Secondary School, Panchkula",
-      date: "Apr 2022 - March 2023",
-      grade: "87%",
-      desc: "I completed my class 12 education from Haryana Model Senior Secondary School, Panchkula, under the CBSE board.",
-      degree: "CBSE Class 12th",
-    },
-    {
-      id: 2,
-      img: hmsss,
-      school: "Haryana Model Senior Secondary School, Panchkula",
-      date: "Apr 2020 - March 2021",
-      grade: "75%",
-      desc: "I completed my class 10 education from Haryana Model Senior Secondary School, Panchkula, under the CBSE board.",
-      degree: "CBSE Class 10th",
-    },
-  ];
-  
-  export const projects = [
-    {
-      id: 0,
-      title: "EduTurns - Modern Education",
-      description:
-        "EduTurns is a modern, full-stack education platform built with React.js, designed to simplify and enhance digital learning. It features secure authentication, seamless payment integration, and an intuitive UI for both students and educators. With real-time data handling and a responsive design, EduTurns empowers users to explore, enroll, and engage with educational content effortlessly.",
-      image: eduturnsLogo,
-      tags: ["HTML", "Clerk", "Stripe", "Express", "MongoDB", "Node JS", "React JS", "JavaScript", "Tailwind CSS"],
-      github: "https://github.com/amit-prajapati-ap/EduTurns",
-      webapp: "https://eduturns.vercel.app/",
-    },
-    {
-      id: 1,
-      title: "NotesSnippet - Notes Saver App",
-      description:
-        "NotesSnippet is a sleek and efficient full-stack application for saving and organizing personal notes. Built for students and professionals alike, it allows users to create, edit, and manage notes in a clean, distraction-free interface. With real-time updates and Firebase integration, your notes stay synced and accessible across devices.",
-      image: notessnippetLogo,
-      tags: ["HTML", "React JS", "Firebase", "JavaScript", "Tailwind CSS"],
-      github: "https://github.com/amit-prajapati-ap/NotesSnippet",
-      webapp: "https://notes-snippet.netlify.app/",
-    },
-    {
-      id: 2,
-      title: "Universal Auth System - Secure Authentication",
-      description:
-        "One Auth to Rule Them All — Scalable, Secure & Developer-First: The Universal Secure Auth System is a robust, plug-and-play authentication backend designed for full-stack applications seeking scalable, zero-friction user auth. It seamlessly integrates modern authentication standards with developer usability, cutting down auth setup time from hours to minutes.",
-      image: mernAuthUI,
-      tags: ["HTML", "Express", "MongoDB", "Node JS", "React JS", "JavaScript", "Tailwind CSS"],
-      github: "https://github.com/amit-prajapati-ap/MERN-Authentication",
-      webapp: "https://mern-auth-ui-weld.vercel.app",
-    },
-  ];  
+
+export const education = [
+  {
+    id: 0,
+    img: ku,
+    school: "Kurukshetra University, Haryana",
+    date: "July 2023 - May 2026",
+    GPA: "9.0",
+    desc: "I am doing my Bachelor's degree in Computer Application (BCA) from Kurukshetra University, Kurukshetra.",
+    degree: "Bachelor in Computer Application - BCA",
+  },
+  {
+    id: 1,
+    img: hmsss,
+    school: "Haryana Model Senior Secondary School, Panchkula",
+    date: "Apr 2022 - March 2023",
+    grade: "87%",
+    desc: "I completed my class 12 education from Haryana Model Senior Secondary School, Panchkula, under the CBSE board.",
+    degree: "CBSE Class 12th",
+  },
+  {
+    id: 2,
+    img: hmsss,
+    school: "Haryana Model Senior Secondary School, Panchkula",
+    date: "Apr 2020 - March 2021",
+    grade: "75%",
+    desc: "I completed my class 10 education from Haryana Model Senior Secondary School, Panchkula, under the CBSE board.",
+    degree: "CBSE Class 10th",
+  },
+];
+
+export const projects = [
+  {
+    id: 0,
+    title: "Gaddi Bazaar - Car Rental Marketplace",
+    description:
+      "Gaddi Bazaar is a full-stack, location-based car rental platform where owners can list vehicles and users can book by city and date. Featuring a mobile-first design, real-time availability validation, and dynamic booking flows, it's built to revolutionize car rental with clean UX, JWT authentication, and dual dashboards.",
+    image: gaddibazaarLogo,
+    tags: [
+      "React.js", "Tailwind CSS", "Framer Motion", "React Router",
+      "Node.js", "Express.js", "MongoDB", "JWT", "JavaScript"
+    ],
+    github: "https://github.com/amit-prajapati-ap/Gaddi-Bazaar",
+    webapp: "https://gaddi-bazaar.vercel.app/",
+  },
+  {
+    id: 1,
+    title: "EduTurns - Modern Education",
+    description:
+      "EduTurns is a modern, full-stack education platform built with React.js, designed to simplify and enhance digital learning. It features secure authentication, seamless payment integration, and an intuitive UI for both students and educators. With real-time data handling and a responsive design, EduTurns empowers users to explore, enroll, and engage with educational content effortlessly.",
+    image: eduturnsLogo,
+    tags: [
+      "HTML", "Clerk", "Stripe", "Express", "MongoDB",
+      "Node JS", "React JS", "JavaScript", "Tailwind CSS"
+    ],
+    github: "https://github.com/amit-prajapati-ap/EduTurns",
+    webapp: "https://eduturns.vercel.app/",
+  },
+  {
+    id: 2,
+    title: "VibeoSonic - Music Learning Platform",
+    description:
+      "VibeoSonic is an immersive music learning web app, offering structured courses in a visually rich, responsive UI. Built with cutting-edge Next.js + Tailwind stack, it focuses on delivering a seamless user experience with animations, accessibility-first design, and minimal distraction.",
+    image: VibeoSonicLogo,
+    tags: [
+      "Next.js", "TypeScript", "React.js", "Tailwind CSS",
+      "JavaScript", "Motion", "Shadcn", "Acernity", "HTML5"
+    ],
+    github: "https://github.com/amit-prajapati-ap/VibeoSonic",
+    webapp: "https://vibeo-sonic.vercel.app/",
+  },
+  {
+    id: 3,
+    title: "TravelEase - Smart Travel UI",
+    description:
+      "TravelEase is a sleek, full-stack travel assistant app built with the MERN stack. It features beautiful motion animations, dynamic loading skeletons, and an intuitive user interface designed to simplify trip planning and enhance travel booking workflows.",
+    image: TravelEaseLogo,
+    tags: [
+      "MongoDB", "Express", "React.js", "Node.js",
+      "Motion", "Tailwind CSS", "JavaScript"
+    ],
+    github: "https://github.com/amit-prajapati-ap/TravelEase",
+    webapp: "https://travelease-ruby.vercel.app/",
+  },
+  {
+    id: 4,
+    title: "NotesSnippet - Notes Saver App",
+    description:
+      "NotesSnippet is a sleek and efficient full-stack application for saving and organizing personal notes. Built for students and professionals alike, it allows users to create, edit, and manage notes in a clean, distraction-free interface. With real-time updates and Firebase integration, your notes stay synced and accessible across devices.",
+    image: notessnippetLogo,
+    tags: ["HTML", "React JS", "Firebase", "JavaScript", "Tailwind CSS"],
+    github: "https://github.com/amit-prajapati-ap/NotesSnippet",
+    webapp: "https://notes-snippet.netlify.app/",
+  },
+  {
+    id: 5,
+    title: "Universal Auth System - Secure Authentication",
+    description:
+      "One Auth to Rule Them All — Scalable, Secure & Developer-First: The Universal Secure Auth System is a robust, plug-and-play authentication backend designed for full-stack applications seeking scalable, zero-friction user auth. It seamlessly integrates modern authentication standards with developer usability, cutting down auth setup time from hours to minutes.",
+    image: mernAuthLogo,
+    tags: [
+      "HTML", "Express", "MongoDB", "Node JS",
+      "React JS", "JavaScript", "Tailwind CSS"
+    ],
+    github: "https://github.com/amit-prajapati-ap/MERN-Authentication",
+    webapp: "https://mern-auth-ui-weld.vercel.app",
+  }
+];
