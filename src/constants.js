@@ -33,10 +33,14 @@ import TravelEaseLogo from './assets/work_logo/travelease.png';
 import VibeoSonicLogo from './assets/work_logo/vibeosonic.png';
 
 import { AiFillOpenAI, AiOutlineApi } from 'react-icons/ai'
-import { FaFigma } from 'react-icons/fa'
+import { FaFigma, FaLaravel } from 'react-icons/fa'
 import { GrMysql } from 'react-icons/gr'
 import { BiLogoJquery, BiLogoTypescript } from 'react-icons/bi'
-import { SiAppwrite, SiAxios, SiClerk, SiJsonwebtokens, SiPrettier, SiReactrouter, SiSocketdotio, SiStripe } from 'react-icons/si'
+import { SiAppwrite, SiAuthentik, SiAxios, SiChakraui, SiClerk, SiJsonwebtokens, SiNextdotjs, SiNextui, SiPrettier, SiReactrouter, SiShadcnui, SiSocketdotio, SiStripe, SiTypescript } from 'react-icons/si'
+import { TbBoltFilled, TbBrandFramerMotion } from 'react-icons/tb';
+import { FiGithub } from 'react-icons/fi';
+import { RxVercelLogo } from 'react-icons/rx';
+import { RiClaudeFill, RiNextjsFill } from 'react-icons/ri';
 
 export const SkillsInfo = [
   {
@@ -45,15 +49,20 @@ export const SkillsInfo = [
       { name: 'HTML', logo: htmlLogo },
       { name: 'CSS', logo: cssLogo },
       { name: 'JavaScript', logo: javascriptLogo },
+      { name: 'TypeScript', logo: SiTypescript }, // NEW
       { name: 'React JS', logo: reactjsLogo },
       { name: 'Redux', logo: reduxLogo },
       { name: 'Tailwind CSS', logo: tailwindcssLogo },
+      { name: 'Framer Motion', logo: TbBrandFramerMotion }, // NEW
+      { name: 'React Router', logo: SiReactrouter },
+      { name: 'Shadcn UI', logo: SiShadcnui }, // NEW
+      { name: 'Aceternity UI', logo: SiChakraui }, // NEW
       { name: 'Stripe', logo: SiStripe },
       { name: 'Clerk', logo: SiClerk },
-      { name: 'React Router', logo: SiReactrouter },
       { name: 'Prettier', logo: SiPrettier },
       { name: 'JQuery', logo: BiLogoJquery },
     ],
+
   },
   {
     title: 'Backend',
@@ -67,6 +76,9 @@ export const SkillsInfo = [
       { name: 'REST APIs', logo: AiOutlineApi },
       { name: 'Axios', logo: SiAxios },
       { name: 'Socket.io', logo: SiSocketdotio },
+      { name: 'OAuth', logo: SiAuthentik },
+      { name: 'NextAuth', logo: RiNextjsFill },
+      { name: 'Next.js', logo: SiNextdotjs },  
     ],
   },
   {
@@ -85,13 +97,16 @@ export const SkillsInfo = [
     title: 'Tools',
     skills: [
       { name: 'Git', logo: gitLogo },
-      { name: 'GitHub', logo: githubLogo },
+      { name: 'GitHub', logo: FiGithub },
       { name: 'VS Code', logo: vscodeLogo },
       { name: 'Postman', logo: postmanLogo },
-      { name: 'Vercel', logo: vercelLogo },
+      { name: 'Vercel', logo: RxVercelLogo },
       { name: 'Netlify', logo: netlifyLogo },
       { name: 'Figma', logo: FaFigma },
       { name: 'OpenAI', logo: AiFillOpenAI },
+      { name: 'Bolt.ai', logo: TbBoltFilled },
+      { name: 'Lovable.ai', logo: FaLaravel },
+      { name: 'ClaudeAI', logo: RiClaudeFill },
     ],
   },
 ];
